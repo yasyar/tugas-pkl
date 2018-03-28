@@ -62,7 +62,7 @@ if(!$_SESSION['username']) {
 			<div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">Input Mahasiswa</div>
-                        <div class="panel-body">
+                        <div class="panel-body">           
                             <form id="demo-form2" novalidate class="form-horizontal form-label-left" method="post" action="process_input.php" enctype='multipart/form-data'>
                                 <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
                                 <div class="item form-group">
@@ -109,8 +109,9 @@ if(!$_SESSION['username']) {
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">Cancel</button>
+                                        <button type="reset" class="btn btn-primary">Cancel</button>
                                         <button type="submit" class="btn btn-success">Submit</button>
+                                        <a href="" class="btn btn-danger">Import</a>
                                     </div>
                                 </div>
                             </form>

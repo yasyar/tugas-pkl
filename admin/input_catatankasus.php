@@ -74,7 +74,7 @@ include '../config/database.php';
                                             $query = $connection->query("SELECT * FROM mahasiswa");
                                             while ($data = $query->fetch_array(MYSQLI_BOTH)) {
                                         ?>
-                                        <option value="<?php echo $data['nrp']; ?>"><?php echo $data['nama']; ?></option>
+                                        <option value="<?php echo $data['nrp']; ?>"><?php echo $data['nrp']; ?></option>
                                         <?php } ?>
                                         </select>
                                     </div>
@@ -111,7 +111,7 @@ include '../config/database.php';
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">Cancel</button>
+                                        <button type="reset" class="btn btn-primary">Cancel</button>
                                         <button type="submit" class="btn btn-success">Submit</button>
                                     </div>
                                 </div>
