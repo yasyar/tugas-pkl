@@ -5,6 +5,7 @@ include("../Classes/PHPExcel/IOFactory.php");
 $file = $_FILES['import']['name'];
 $extensionList = array("xls","xlsx","XLS","XLSX");
 $pecah1 = explode(".", $photo1);
+$dir = "../assets/";
 $ekstensi1 = $pecah1[1];
 
 if (in_array($ekstensi1,$extensionList)) {
