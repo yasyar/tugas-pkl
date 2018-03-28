@@ -15,7 +15,7 @@ if (in_array($ekstensi1,$extensionList)) {
 	$upload = move_uploaded_file($tmp1,$dir.$nama_baru1);
 		
 	// Create new PHPExcel object
-	$objPHPExcel = PHPExcel_IOFactory::load($tmp1,$dir.$nama_baru1);
+	$objPHPExcel = PHPExcel_IOFactory::load($dir.$nama_baru1);
 	
 	$dataArr = array();
 	
