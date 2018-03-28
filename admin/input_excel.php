@@ -63,46 +63,16 @@ if(!$_SESSION['username']) {
                 <div class="panel panel-default">
                     <div class="panel-heading">Input Mahasiswa</div>
                         <div class="panel-body">           
-                            <form id="demo-form2" novalidate class="form-horizontal form-label-left" method="post" action="process_input.php" enctype='multipart/form-data'>
-                                <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">NRP <span class="required">*</span></label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="nrp" placeholder="contoh : 1404104" required="required" >
-                                    </div>
-                                </div>
-
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama <span class="required">*</span></label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="nama" placeholder="Nama Lengkap" required="required" >
-                                    </div>
-                                </div>
-
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Alamat <span class="required">*</span></label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="alamat" placeholder="alamat lengkap" required="required" >
-                                    </div>
-                                </div>
-
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Status Belajar <span class="required">*</span></label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <select type="option" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="statusBelajar" placeholder="" required="required" >
-                                            <option>Mandiri </option>
-                                            <option>beasiswa</option>
-                                        </select>
-                                    </div>
-                                </div>
+                            <form id="demo-form2" novalidate class="form-horizontal form-label-left" method="post" action="upload.php" enctype='multipart/form-data'>
+                                
 
                                 <div class="item form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Status <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <select type="text" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="status" placeholder="" required="required" >
-                                            <option>Registrasi</option>
-                                            <option>Verifikasi Dosen</option>
-                                        </select>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile02" name="import">
+                                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                                    </div>
                                     </div>
                                 </div>
 
@@ -111,7 +81,7 @@ if(!$_SESSION['username']) {
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                                         <button type="reset" class="btn btn-primary">Cancel</button>
                                         <button type="submit" class="btn btn-success">Submit</button>
-                                        <a href="input_excel.php" class="btn btn-danger">Import</a>
+                                        
                                     </div>
                                 </div>
                             </form>

@@ -35,7 +35,7 @@ if (in_array($ekstensi1,$extensionList)) {
 	}
 	unset($dataArr[1]); // since in our example the first row is the header and not the actual data
 	foreach($dataArr as $val){
-		$query = $db->query("INSERT INTO mahasiswa SET fname = '" . $db->escape($val['1']) . "', lname = '" . $db->escape($val['2']) . "', email = '" . $db->escape($val['3']) . "', phone = '" . $db->escape($val['4']) . "', company = '" . $db->escape($val['5']) . "'");
+		$query = $db->query("INSERT INTO mahasiswa SET nrp = '" . $db->escape($val['1']) . "', nama = '" . $db->escape($val['2']) . "', alamat = '" . $db->escape($val['3']) . "', statusBelajar = '" . $db->escape($val['4']) . "', status = '" . $db->escape($val['5']) . "'");
 	}
 } else {
 	echo "hanya diperbolehkan file ekstension jpeg,jpg,png "; 
